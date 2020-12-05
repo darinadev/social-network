@@ -1,0 +1,29 @@
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.pageNumber {
+    cursor: pointer;
+    display: grid;
+    align-self: center;
+    padding: 0 4px;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.paginationControlNextBtn,
+.paginationControlPrevBtn {
+    display: grid;
+    align-self: center;
+}
+
+.paginationControlNextBtn {
+    margin-left: 7px;
+}
+
+.paginationControlPrevBtn {
+    margin-right: 7px;
+}

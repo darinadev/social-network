@@ -1,0 +1,55 @@
+.photoEditor {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f0f8ff;
+    height: 540px;
+    width: 800px;
+    padding: 20px 0 20px 10px;
+    border-radius: 5px;
+    border: 2px solid #1890ff;
+}
+
+.imgPreviewTitle {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #096dd9;
+}
+
+.imgPreview {
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.imgPreviewBtn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.closeEditor {
+  height: 34px;
+  width: 34px;
+  background-color: #1890ff;
+  border: 0;
+  border-radius: 3px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 8px;
+  transition: all .5s ease;
+}
+.closeEditor:hover {
+  background-color: #40a9ff;
+  cursor: pointer;
+}
+.closeEditor svg {
+  height: 18px;
+  width: 18px;
+}

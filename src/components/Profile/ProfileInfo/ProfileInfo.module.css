@@ -1,0 +1,124 @@
+.profileInfo {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-column-gap: 25px;
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+.avatarImg {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.uploadPhoto {
+    visibility: hidden;
+}
+.avatar:hover .uploadPhoto{
+    visibility: visible;
+}
+.uploadPhoto input {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+}
+.uploadPhoto label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.8);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.status span {
+    font-style: italic;
+    color: #101010;
+    font-size: 16px;
+}
+.status input {
+    font-size: 15px;
+}
+
+.profileName {
+    font-size: 25px;
+    color: #096dd9;
+    padding: 8px 0;
+}
+
+.profileData, .profileDataForm {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-row-gap: 8px;
+}
+.profileData h4, 
+.profileDataForm h4,
+.contactsForm h4 {
+    color: #101010;
+    font-weight: normal;
+}
+.profileData p {
+    color: #002766;
+    margin-bottom: 0;
+}
+
+.socialNetworks {
+    display: flex;
+    flex-direction: column;
+}
+.socialNetworks a {
+    text-decoration: none;
+    color: #002766;
+}
+
+.socialNetworks a:hover {
+    color: #096dd9;
+}
+
+.profileDataForm input,
+.contactsForm input {
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #999;
+    padding: 5px 10px;
+}
+
+.profileDataForm textarea {
+    font-size: 15px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #999;
+    padding: 5px 10px;
+}
+
+.contactsForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.contsctsFormItem {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.profileFormTitle {
+    font-size: 25px;
+    color: #096dd9;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #096dd9;
+}

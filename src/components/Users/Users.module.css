@@ -1,0 +1,49 @@
+.users {
+    display: grid;
+    grid-row-gap: 12px;
+    margin: 5px 0;
+}
+
+.user {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 80px 1fr 120px;
+    grid-column-gap: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    padding-right: 15px;
+}
+
+.user a {
+    height: 80px;
+    width: 80px;
+}
+
+.user img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.user button {
+    display: grid;
+    align-self: center;
+}
+
+.usersSearch input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.usersSearch select {
+    margin-right: 10px;
+}

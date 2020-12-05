@@ -1,0 +1,61 @@
+.errorOverlay {
+    background-color: rgba(0,0,0,.7);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.errorWindow {
+    background-color: #f0f8ff;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 250px);
+    border-radius: 5px;
+    border: 2px solid #096dd9;
+    padding: 20px 50px;
+    line-height: 1.5;
+}
+
+.errorWindow p {
+    font-size: 22px;
+    color: #101010;
+}
+
+.errorWindowTitle {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    height: 130px;
+    align-items: center;
+    font-size: 90px;
+    color: #096dd9;
+}
+.errorWindowTitle span {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.errorBtn {
+    height: 34px;
+    width: 34px;
+    background-color: #1890ff;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 8px;
+    transition: all .5s ease;
+}
+.errorBtn:hover {
+    background-color: #40a9ff;
+    cursor: pointer;
+}
+.errorBtn svg {
+    height: 18px;
+    width: 18px;
+}

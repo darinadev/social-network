@@ -1,0 +1,75 @@
+.postsTitle {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #096dd9;
+}
+
+.posts textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.postsItems {
+    display: grid;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 70px 1fr 16px;
+    grid-column-gap: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.avatar {
+    height: 62px;
+    width: 62px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.postMessage {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 18px 10px 14px;
+}
+
+.postMessage p {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.deletePost {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    padding: 1px;
+}
+
+.like {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-column-gap: 5px;
+    align-self: center;
+    margin-left: 85px;
+}
+
+.like svg {
+    height: 20px;
+    width: 20px;
+    fill: #1890ff;
+    transition: all .5s ease;
+}
+
+.like svg:hover {
+    fill: #40a9ff;
+    cursor: pointer;
+}
